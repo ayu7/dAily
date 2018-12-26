@@ -1,7 +1,7 @@
 var request = new XMLHttpRequest();
 
 request.open('GET',
-'https://api.unsplash.com/photos/random/auto=format/?client_id=0b8a92b14dc6846358089f2c986a5f15bbc1f99cfb6a38cd336084a18a24d6bc', true);
+'https://api.unsplash.com/photos/random/auto=format/?client_id=<UR KEY HERE>', true);
 request.onload = function () {
 
   // Begin accessing JSON data here
