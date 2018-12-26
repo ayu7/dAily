@@ -1,0 +1,21 @@
+{
+ "manifest_version" : 2,
+ "name": "dAily",
+ "description": "Default tab showing everything you need at
+ a quick glance, your calendar as a list of events, a todo list,
+ the time, date, and quick links",
+ "version": "1",
+ "author": "Angela Yu",
+
+ "browser_action": {
+  "default_icon": "tab_icon.png",
+  "default_title": "hey friend",
+  "default_popup": "google.com"
+ },
+
+ "chrome_url_overrides": {
+   "newtab": "newtab.html"
+ },
+
+ "permissions": ["activeTab"]
+ }
