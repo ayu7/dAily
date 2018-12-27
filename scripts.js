@@ -13,8 +13,10 @@ request.onload = function () {
   document.body.style.backgroundImage = complete_link;
   document.body.style.backgroundSize = "1290px 620px";
 }
-//request.send();
+// request.send();
 document.body.style.backgroundColor = '#E0AC9D';
+
+//======================================================================
 
 var day = new Date();
 var weekday = new Array(7);
@@ -42,3 +44,19 @@ if (min < 10){
 }
 
 time.innerText = hour + ":" + min;
+
+//=============================================================================
+
+
+var gmail = document.getElementById("gmail");
+var canvas = document.getElementById("canvas");
+var fb = document.getElementById("fb");
+
+var openWindow = function(e){
+  window.open(e.path[0].alt, '_self');
+}
+
+// var icons = document.getElementsByTagName('img');
+gmail.addEventListener("click", openWindow);
+canvas.addEventListener("click", openWindow);
+fb.addEventListener("click", openWindow);

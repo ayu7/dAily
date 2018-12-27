@@ -11,3 +11,27 @@
   color: white;
   font-size: 100px;
 }
+
+img#gmail{
+  position: absolute;
+  bottom: 70px;
+  left: 10px;
+}
+
+img#canvas{
+  position: absolute;
+  bottom: 45px;
+  left: 10px;
+}
+
+img#fb{
+  position: absolute;
+  bottom: 20px;
+}
+
+#task{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background:rgba(255,255,255,0.5);
+}
