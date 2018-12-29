@@ -1,5 +1,1 @@
-"browser_action": {
- "default_icon": "tab_icon.png",
- "default_title": "hey friend",
- "default_popup": "google.com"
-}, 
+this is some text that i hope will show up

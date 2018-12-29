@@ -56,7 +56,32 @@ var openWindow = function(e){
   window.open(e.path[0].alt, '_self');
 }
 
-// var icons = document.getElementsByTagName('img');
 gmail.addEventListener("click", openWindow);
 canvas.addEventListener("click", openWindow);
 fb.addEventListener("click", openWindow);
+
+
+//===============================================================================
+
+var reader = new XMLHttpRequest();
+
+function loadFile() {
+    reader.open('get', 'weekly.txt', true);
+    reader.onreadystatechange = displayContents;
+    reader.send(null);
+}
+
+function displayContents() {
+    if(reader.readyState==4) {
+        box.innerHTML = reader.responseText;
+    }
+}
+
+function edit(e){
+  if (e.which == 13){
+    console.log("enter key was pressed");
+  }
+}
+
+var box = document.getElementById('task', loadFile());
+box.addEventListener('keydown', edit);
